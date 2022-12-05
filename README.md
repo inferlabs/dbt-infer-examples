@@ -11,3 +11,11 @@ Example project for using dbt with Infer.
 
 Learn more about `dbt-infer` at [https://dbt.getinfer.io/](https://dbt.getinfer.io/).
 
+Learn more about SQL-inf and Infer at [https://docs.getinfer.io/](https://docs.getinfer.io/).
+
+## Setup
+
+To run the examples you need to install both `dbt-core`, `dbt-infer` as well as the `dbt` adapter for your underlying warehouse.
+Learn more about setting up `dbt-infer` at [https://dbt.getinfer.io/docs/getting_started](https://dbt.getinfer.io/docs/getting_started).
+
+To make things easier we have included a [poetry](https://python-poetry.org/) environment.
