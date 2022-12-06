@@ -1,7 +1,9 @@
 
 /*
- Model of all seller leads. If they did not convert we have very little data.
- Once they convert we get extra data.
+ Model of all seller leads.
+
+ If they did not convert we have very little data - only first_contact_date, landing_page_id and origin.
+ Once they convert we get a lot more data about their business.
 */
 
 with closed_leads as (

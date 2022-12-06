@@ -1,4 +1,10 @@
 
+/*
+ Models combining everything know about each item purchased.
+
+ We join information about the product of the item as well as the order it was contained in,
+ including customer details, reviews and payment info.
+ */
 
 with orders_items as (
     select items.order_id,
@@ -38,7 +44,7 @@ with orders_items as (
            products.product_length_cm,
            products.product_height_cm,
            products.product_width_cm
-    FROM customer_orders INNER JOIN demo_data.olist_products_dataset as products ON customer_orders.product_id=products.product_id
+    FROM customer_orders INNER JOIN demo_data.olist_products_dataset as products ON customer_orders.product_id = products.product_id
 ), customer_orders_reviews as (
     SELECT customer_orders_products.*,
            reviews.review_score,

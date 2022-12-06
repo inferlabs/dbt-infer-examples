@@ -1,4 +1,10 @@
 
+/*
+ Model of all seller.
+
+ We add data captured about a seller including data captured as lead.
+ */
+
 SELECT sellers.seller_id,
        sellers.seller_zip_code_prefix,
        sellers.seller_city,

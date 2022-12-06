@@ -1,7 +1,12 @@
 
+/*
+ Model of all products.
+
+ We add all information about each product including sales data, like number of customers, orders, avg price and review rating.
+ */
 
 SELECT product_id,
-       ANY_VALUE(product_category_name) as product_category_name,
+       ANY_VALUE(product_category_name_english) as product_category_name_english,
        ANY_VALUE(product_name_length) as product_name_length,
        ANY_VALUE(product_description_length) as product_description_length,
        ANY_VALUE(product_photos_qty) as product_photos_qty,
@@ -14,5 +19,5 @@ SELECT product_id,
        AVG(price) as avg_price,
        AVG(payment_installments) as avg_installments,
        AVG(review_score) as avg_review_score
-FROM {{ ref('item_orders') }}
+FROM {{ ref('items') }}
 GROUP BY product_id
