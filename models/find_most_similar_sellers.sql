@@ -21,7 +21,7 @@ with most_similar_to_highest_ltv_seller as (
            row_num
     FROM (
         SELECT sellers_orders.*, ROW_NUMBER() OVER (ORDER BY ltv DESC) AS row_num
-        FROM {{ ref('sellers_orders') }} as sellers_orders
+        FROM {{ ref('seller_orders') }} as sellers_orders
     )
 )
 

@@ -22,7 +22,7 @@ with predict_seller_ltv_input as (
            business_segment,
            lead_type,
            business_type
-    FROM {{ ref('sellers_orders') }}
+    FROM {{ ref('seller_orders') }}
 )
 
 SELECT * FROM predict_seller_ltv_input EXPLAIN(PREDICT(ltv))
