@@ -1,8 +1,3 @@
-{{
-  config(
-    materialized = "table"
-  )
-}}
 
 /*
  Segments leisure products by product characteristics

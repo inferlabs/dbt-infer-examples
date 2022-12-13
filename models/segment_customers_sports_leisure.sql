@@ -1,8 +1,3 @@
-{{
-  config(
-    materialized = "table"
-  )
-}}
 
 /*
     Segments customers who have bought leisure products by behavioral traits

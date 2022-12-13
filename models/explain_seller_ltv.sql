@@ -1,8 +1,3 @@
-{{
-  config(
-    materialized = "table"
-  )
-}}
 
  /*
     Model for explaining the prediction of seller ltv.

@@ -1,10 +1,4 @@
 
-{{
-  config(
-    materialized = "table"
-  )
-}}
-
 /*
  Translates product reviews into english
  */

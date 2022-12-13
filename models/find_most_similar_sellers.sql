@@ -1,10 +1,4 @@
 
-{{
-  config(
-    materialized = "table"
-  )
-}}
-
 /*
  Finds the sellers most similar to the highest grossing seller.
  */

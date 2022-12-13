@@ -1,8 +1,3 @@
-{{
-  config(
-    materialized = "table"
-  )
-}}
 
 /*
     Model for predicting the ltv for each customer.

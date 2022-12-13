@@ -1,8 +1,3 @@
-{{
-  config(
-    materialized = "table"
-  )
-}}
 
 /*
     Model for explaining the probability of a seller lead converting based on what is known about an leads.

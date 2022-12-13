@@ -22,3 +22,29 @@ vars:
   month: 9
   day: 4
 
+models:
+    dbt_infer_examples:
+        predict_seller_conversion:
+            +materialized: table
+        explain_seller_conversion:
+            +materialized: table
+        predict_seller_ltv:
+            +materialized: table
+        explain_seller_ltv:
+            +materialized: table
+        predict_customer_ltv:
+            +materialized: table
+        explain_customer_ltv:
+            +materialized: table
+        find_most_similar_sellers:
+            +materialized: table
+        segment_customers_sports_leisure:
+            +materialized: table
+        segment_products_sports_leisure:
+            +materialized: table
+        translate_reviews_sports_leisure:
+            +materialized: table
+        sentiment_reviews_sports_leisure:
+            +materialized: table
+        topics_reviews_sports_leisure:
+            +materialized: table
