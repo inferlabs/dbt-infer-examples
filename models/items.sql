@@ -8,7 +8,7 @@
 
 with orders_items as (
     select items.order_id,
-           orders.customer_id,
+           orders.customer_id as order_customer_id,
            items.product_id,
            items.seller_id,
            items.shipping_limit_date,
@@ -30,10 +30,11 @@ with orders_items as (
            from orders_items INNER JOIN demo_data.olist_order_payments_dataset as payments ON orders_items.order_id = payments.order_id
 ), customer_orders as (
     select orders_items_payments.*,
+           customers.customer_unique_id as customer_id,
            customers.customer_zip_code_prefix,
            customers.customer_city,
            customers.customer_state
-           from orders_items_payments INNER JOIN demo_data.olist_customers_dataset as customers ON orders_items_payments.customer_id = customers.customer_id
+           from orders_items_payments INNER JOIN demo_data.olist_customers_dataset as customers ON orders_items_payments.order_customer_id = customers.customer_id
 ), customer_orders_products as (
     SELECT customer_orders.*,
            products.product_category_name,

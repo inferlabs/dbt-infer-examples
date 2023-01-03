@@ -16,7 +16,7 @@ with predict_customer_ltv_input as (
            avg_item_price,
            no_items,
            avg_review_score,
-           no_reviews,
+           no_detailed_reviews,
            avg_installments,
            avg_photos,
            avg_weight,

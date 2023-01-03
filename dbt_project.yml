@@ -48,3 +48,5 @@ models:
             +materialized: table
         topics_reviews_sports_leisure:
             +materialized: table
+        customer_segmentation:
+            +materialized: table
