@@ -16,6 +16,6 @@ Learn more about SQL-inf and Infer at [https://docs.getinfer.io/](https://docs.g
 ## Setup
 
 To run the examples you need to install both `dbt-core`, `dbt-infer` as well as the `dbt` adapter for your underlying warehouse.
-Learn more about setting up `dbt-infer` at [https://dbt.getinfer.io/docs/getting_started](https://dbt.getinfer.io/docs/getting_started).
+Learn more about setting up `dbt-infer` at [https://www.getinfer.io/articles/getting-started-with-dbt](https://www.getinfer.io/articles/getting-started-with-dbt).
 
 To make things easier we have included a [poetry](https://python-poetry.org/) environment.
