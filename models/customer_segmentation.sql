@@ -4,7 +4,7 @@
  */
 
 {{ config(
-  enabled=false
+  enabled=true
 ) }}
 
 with customers_segmentation_input as (
