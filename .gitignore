@@ -3,3 +3,6 @@ target/
 dbt_packages/
 logs/
 .idea
+poetry.lock
+pyproject.toml
+settings.json
